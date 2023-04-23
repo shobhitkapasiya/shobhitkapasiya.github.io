@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        nav{
+            background: rgb(0, 0, 0);
+            height: 60px;
+            position: absolute;
+            width: 100%;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            }
+            .logo{
+                font-size: 30px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: white;
+                padding-left: 30px;
+            }
+            nav ul{
+                float: right;
+                /* position: relative;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex: 0.5; */
+            }
+            ul li{
+                display: inline-block;
+                padding-right: 60px;
+                line-height: 60px;
+                margin-top: -60px; 
+            }
+            ul li a{
+                color: white;
+                text-decoration: none;
+            }
+            .hero__section{
+               position: relative;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               min-height: 100vh;
+               /* background: rgb(124, 49, 49); */
+               background: url(4.jpg);
+                background-size: cover;
+            }
+            .content{
+                text-align: center;
+                color: white;
+            }
+            .hero__section .content h1{
+                font-size: 80px;
+                text-align: center;
+            }
+            .hero__section a{
+                padding: 10px 20px;
+                background: #fff;
+                color: #000;
+                margin-top: 30px;
+                display: inline-block;
+                border-radius: 20px;
+                
+                
+            }
+    </style>
+</head>
+<body>
+    <header>
+    <nav>
+        <h1 class="logo">logo</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">blog</a></li>
+        </ul>
+    </nav>
+    </header>
+    
+    <div class="hero__section">
+        <div class="content">
+            <h1>Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet </p>
+
+            <div class="btn_group">
+                <a href="#">Explore More</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
